@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-center;
+  }
+  .btn {
+    @apply mr-auto;
+  }
+  .input-box {
+    @apply text-xl font-normal capitalize;
+  }
+}
