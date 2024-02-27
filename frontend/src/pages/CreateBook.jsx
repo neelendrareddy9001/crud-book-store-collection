@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import BackButton from "../../components/BackButton";
-import Spinner from "../../components/Spinner";
+import BackButton from "../components/BackButton";
+import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -34,12 +34,10 @@ const CreateBook = () => {
   return (
     <div className="p-4">
       <BackButton />
-      <h1 className="text-3xl my-4">Create Book</h1>
+      <h1 className="text-3xl my-4 title">Create Book</h1>
       {loading ? <Spinner /> : ""}
       <div className="flex flex-col border-2 border-sky-800 rounded-xl w-[600px] p-4 mx-auto">
-        <h3 className="title text-2xl font-semibold first-letter:text-sky-500 ">
-          New Book
-        </h3>
+        <h3>New Book</h3>
         <div className="py-4">
           <label className="text-2xl mr-4 text-gray-500">Title</label>
           <input

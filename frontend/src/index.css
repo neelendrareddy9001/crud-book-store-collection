@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+  .icon {
+    @apply text-black bg-white;
+  }
   .title {
-    @apply text-center;
+    @apply text-3xl my-4 bg-sky-500 text-white p-2 rounded-lg shadow-slate-600 hover:translate-y-2 transition-all border max-w-[200px];
   }
   .btn {
     @apply mr-auto;

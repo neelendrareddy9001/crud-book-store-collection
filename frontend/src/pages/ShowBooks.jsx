@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import BackButton from "../../components/BackButton";
-import Spinner from "../../components/Spinner";
+import BackButton from "../components/BackButton";
+import Spinner from "../components/Spinner";
 
 const ShowBooks = () => {
   const [book, setBook] = useState({});
@@ -24,7 +24,7 @@ const ShowBooks = () => {
   return (
     <div className="px-4">
       <BackButton />
-      <h1 className="text-3xl my-4">Show Book</h1>
+      <h1 className="text-3xl my-4 title">Show Book</h1>
       {loading ? (
         <Spinner />
       ) : (
