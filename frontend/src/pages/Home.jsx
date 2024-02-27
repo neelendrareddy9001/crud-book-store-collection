@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
+import { MdOutlineAddBox } from "react-icons/md";
 import Spinner from "../components/Spinner";
 import BookTable from "../components/home/BookTable";
 import BookCard from "../components/home/BookCard";
@@ -26,7 +27,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="p-4 bg-lime-300 m-40 rounded-2xl shadow-xl">
+      <div className="p-4 m-40 rounded-2xl shadow-xl">
         <div className="flex justify-center items-center gap-x-4">
           <button
             className="bg-sky-300 hover:bg-sky-600 p-8 py-1 font-semibold my-4 rounded-lg"
@@ -40,6 +41,12 @@ const Home = () => {
           >
             Card
           </button>
+        </div>
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl my-8">Books List</h1>
+          <Link to="/books/create">
+            <MdOutlineAddBox className="text-sky-800 text-4xl" />
+          </Link>
         </div>
         {loading ? (
           <Spinner />
