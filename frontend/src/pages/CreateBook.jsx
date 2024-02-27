@@ -55,7 +55,7 @@ const CreateBook = () => {
             type="text"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            className="border-2 border-gray-500 px-4 py-2 w-full"
+            className="border-2 border-gray-500 px-4 py-2 w-full input-box"
           />
         </div>
         <div className="py-4">
@@ -64,7 +64,7 @@ const CreateBook = () => {
             type="text"
             value={publishYear}
             onChange={(e) => setPublishYear(e.target.value)}
-            className="border-2 border-gray-500 px-4 py-2 w-full"
+            className="border-2 border-gray-500 px-4 py-2 w-full input-box"
           />
         </div>
         <button
